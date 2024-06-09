@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHocs</title>
+    <link rel="stylesheet" href="form.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href = "home.html">CHocs</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href='' class="tbl-putih">Buy Choco</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form onsubmit="validateForm(event)">
+    <div class="wrapper">
+        <br> <br> <br> <img class="img-drkch"src="./Assets/buycoco.png" alt="darkchoco"/>
+        <h1>Purchase</h1> <br> <br>
+       
+            <div class="form">
+            <div class="inputfield">
+                <label for="input-name">Full Name :</label>
+                <input type="text" class="input" placeholder="Enter your full name" id="input-name">
+            </div> 
+            <div class="inputfield">
+                <label for="input-phone-number">Phone Number :</label>
+                <input type="text" class="input" placeholder="Enter your number" id="input-phone-number">
+            </div>
+                <div class="inputfield">
+                <label for="input-quantity">Quantity :</label>
+                <input type="number" class="input" placeholder="Enter your quantity" id="input-quantity" >
+            </div> 
+                <div class="inputfield">
+                <label>Products : </label>
+                <select id="select-product" >
+                    <option>Choose your product</option>
+                    <option>Dark Chocolate</option>
+                    <option>Milk Chocolate</option>
+                    <option>Belgian Chocolate</option>
+                </select>
+            </div> 
+            <div class="inputfield">
+                <label for="input-adress">Address : </label>
+                <textarea class="textarea" placeholder="Enter your address" id="input-adress"></textarea>
+            </div>  
+            <div class="inputfield">
+                <!-- <input type="submit" value="Buy Now" class="btn"> -->
+                <button>Buy Now</button>
+            </div>
+            </div>
+    </div>
+    </form>
+    <script src="main.js"></script>
+    <div class="wrapper">
+        <div class="footer">
+            <div class="icon_wa">
+                <br> <br> <br>
+                <img class="img-wa"src="./Assets/wa.png" alt="whatsapp"/>
+            </div>
+            <div class="wa">
+                <br> <br> <br>
+                <p>0898-7896-700</p>
+            </div>
+            <div class="icon_ig">
+                <br> <br> <br>
+                <img class="img-ig"src="./Assets/ig.png" alt="instagram"/>
+            </div>
+            <div class="ig">
+                <br> <br> <br>
+                <p>chocs_choco</p>
+            </div>
+            <div class="icon_email">
+                <br> <br> <br>
+                <img class="img-email"src="./Assets/email.png" alt="email"/>
+            </div>
+            <div class="email">
+                <br> <br> <br>
+                <p>chocs@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>
